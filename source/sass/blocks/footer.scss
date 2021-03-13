@@ -1,0 +1,123 @@
+.footer {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.map__wrapper {
+  width: 957px;
+  height: 530px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+
+  @media (max-width: $tablet-width) {
+    width: 698px;
+    height: 545px;
+    margin-bottom: 2.5rem;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 320px;
+    height: 250px;
+//    margin-bottom: 19rem;
+  }
+}
+
+.map__wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+.map h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 3rem;
+  letter-spacing: -0.005em;
+  color: #1f1f1f;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.map p {
+  max-width: 55.5rem;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 31px;
+  margin-bottom: 4rem;
+  color: rgba(0, 0, 0, 0.7);
+
+  @media (max-width: $tablet-width) {
+    max-width: 70rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 27rem;
+  }
+}
+
+.contacts {
+  margin: 0 auto;
+  margin-top: 1rem;
+  grid-column-gap: 9rem;
+  max-width: 57rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: $mobile-width) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2.5rem;
+    margin-top: 3rem;
+  }
+}
+
+.contacts__wrapper {
+  gap: 15px;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 auto;
+  }
+}
+
+.contacts__mail-svg {
+  height: 20px;
+  width: 3rem;
+  margin-right: 1.5rem;
+}
+
+.contacts__phone-svg {
+  width: 21.5px;
+  height: 22.62px;
+  fill: none;
+  margin-right: 1.5rem;
+}
+
+.contacts__wrapper a {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+
+  &:hover,
+  &:focus {
+    color: $primary;
+    opacity: 1;
+  }
+
+  &:active {
+    color: darken($primary, 25%);
+  }
+}
