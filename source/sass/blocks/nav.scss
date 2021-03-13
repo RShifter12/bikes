@@ -66,13 +66,11 @@
   }
 }
 
-
-
 .nav--closed .nav__content {
   @media (max-width: $tablet-width) {
     display: none;
   }
-  
+
   @media (max-width: $mobile-width) {
     display: none;
   }
@@ -164,7 +162,6 @@
     width: 36px;
     height: 2px;
     background-color: $decorate;
-    
   }
 
   &::before {
@@ -185,7 +182,7 @@
     background-color: $primary;
     opacity: 1;
   }
-  
+
   &:active::before,
   &:active::after {
     background-color: darken($primary, 25%);

@@ -1,20 +1,16 @@
 .video {
-//  text-align: center;
   background-color: $bg-black;
   padding-top: 12.5rem;
-//  height: 71rem;
   position: relative;
   margin-bottom: 22.5rem;
 
   @media (max-width: $tablet-width) {
-//    height: 413px;
     padding-top: 7rem;
     margin-bottom: 13rem;
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 8.5rem;
-//    height: 38.5rem;
     margin-bottom: 10.5rem;
   }
 }
@@ -88,7 +84,6 @@
 }
 
 .video__wrapper img {
-//  margin-top: 10rem;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -97,16 +92,15 @@
   margin: 0 auto;
   text-align: left;
   bottom: -10rem;
-  
+
   @media (max-width: $tablet-width) {
     bottom: -8.5rem;
   }
-  
+
   @media (max-width: $mobile-width) {
     bottom: -5rem;
   }
 }
-
 
 .video__wrapper button {
   width: 65px;
