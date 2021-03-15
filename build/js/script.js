@@ -27,4 +27,3 @@ phoneInput.addEventListener('input', function () {
     phoneInput.setCustomValidity('');
   }
 });
-

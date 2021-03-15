@@ -10,6 +10,9 @@ html {
   font-size: 62.5%;
 }
 
+.main {
+  position: relative;
+}
 body {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
@@ -17,27 +20,68 @@ body {
   min-width: 320px;
   margin: 0 auto;
   max-width: 1920px;
+  position: relative;
 }
 
+
 .content {
-  background-image: url(".././img/mainbike1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 82.5rem;
+  
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
 
-  @media (max-width: $tablet-width) {
+//  @media (max-width: $tablet-width) {
+//    background-size: 100% 34rem;
+//  }
+//
+//  @media (max-width: $mobile-width) {
+//    background-size: 100% 39rem;
+//  }
+
+//  @media (min-resolution: 2dppx) {
+//    background-image: url(".././img/mainbike2x.jpg");
+//  }
+}
+
+.intro-image {
+  background-image: url(".././img/mainbike1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 82.5rem;
+  height: 825px;
+  position: absolute;
+  top: -7rem;
+  width: 100%;
+  z-index: -1;
+  background-color: $bg-black;
+  background-size: cover;
+  background-position: center center;
+  
+  @media (min-resolution: 2dppx) {
+    background-image: url(".././img/mainbike2x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 82.5rem;
+  height: 825px;
+  position: absolute;
+  top: -7rem;
+  width: 100%;
+//  z-index: -1;
+    background-color: $bg-black;
+    background-size: cover;
+  background-position: center center;
+  }
+  
+    @media (max-width: $tablet-width) {
+    background-image: url(".././img/mainbike2x.jpg");
+    background-repeat: no-repeat;
     background-size: 100% 34rem;
+    height: 340px;
+    top: 0;
   }
 
   @media (max-width: $mobile-width) {
     background-size: 100% 39rem;
-  }
-
-  @media (min-resolution: 2dppx) {
-    background-image: url(".././img/mainbike2x.jpg");
+    height: 390px;
   }
 }
 

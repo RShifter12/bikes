@@ -12,7 +12,7 @@
   column-gap: 13rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding: 2.5rem 2rem 1.5rem 2rem;
-  justify-content: space-between;
+//  justify-content: space-between;
   max-width: 88rem;
   margin: 0 auto;
 
@@ -80,7 +80,7 @@
   @media (max-width: $tablet-width) {
     min-width: 100%;
     position: fixed;
-    height: 568px;
+    height: 100%;
     background-color: $white;
     z-index: 2;
     top: 0;
@@ -89,13 +89,14 @@
     padding-left: 0;
     padding-right: 0;
     overflow-y: scroll;
+    padding-bottom: 40rem;
   }
 }
 
 .nav--nojs .nav__content {
   @media (max-width: $tablet-width) {
     min-width: 100%;
-    position: fixed;
+    position: static;
     height: 568px;
     background-color: $white;
     z-index: 2;
@@ -122,6 +123,7 @@
     border: none;
     display: block;
     outline: none;
+    z-index: 1;
 
     &:hover,
     &:focus {
