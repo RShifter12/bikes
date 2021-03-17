@@ -4,6 +4,7 @@ var pageHeader = document.querySelector('.nav');
 var body = document.querySelector('body');
 var headerToggle = document.querySelector('.nav__toggle');
 pageHeader.classList.remove('nav--nojs');
+pageHeader.classList.add('nav--closed');
 
 headerToggle.addEventListener('click', function () {
   if (pageHeader.classList.contains('nav--closed')) {
